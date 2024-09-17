@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ronjas To Do List Application</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!--Google fonts because we like it when it`s pretty! :-) WE GET ACCESS TO THEIR ICONS with this reference-->
+    <!--Font awesome, to make it possible to click icons and delete elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+<body>
+    
+    <header> <!-- Semantic web-tänk -->
+        
+        <h1>Ronjas To-Do List</h1>   
+        <img class="logo" src="https://i.imgur.com/Q0ZPY99.png">
+       
+        <h2><input type="text" id="myInput" placeholder="Add more..."></h2>
+       <!--Jag gör ett span som innehåller en markerad del av text i form av en knapp-->
+       
+       <span 
+        onclick="addElement()" class="buttonClicked"><i class ="fa fa-plus"></i></span>
+     
+        <!--    Här tar header-delen slut -->
+    </header>
+ 
+    <nav> <!-- Semantic web, där jag lägger en o-ordnad lista i form av myUl -->
+        <ul id="myUl">
+            <li>Make applecream</li>
+            <li>Do your nails</li>
+            <li>Pet a dog</li>
+            <li>Watch a comedy</li>
+            <li>Visit a library and read about something random that you tell everyone about</li>
+            <li>Make a website like this for your bucketlist</li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
