@@ -1,25 +1,77 @@
+let tasks=[];
+let completedTasksCount=0;
 
-function createNew(){
-    const inputValue=document.getElementById("myInput").value;
-    if(inputValue==""){
-        alert("You must add something more");
-    }else{
-        const li = document.createNew("li");
-        li.textString=inputValue;
+const taskInput=document.querySelector("#taskInput");
+const addTaskButton=document.querySelector("#addTaskButton");
+const taskList= document.querySelector("#taskList");
+const completedCount=documeny.querySelector("#completedCount");
 
-        document.getElementById("myUl").appendChild("li"); //Gör ett "barn" till grenen
-        document.getElementById("myInput").value=""; //Tömmer input delen
+addTaskButton.addEventListener("click",addTask);
+
+function addTask(){
+    const taskText = taskInput.value.trim();
+
+    if (taskText==""){
+        alert("You must add something to the list!");
+    return;
+
     }
+        
+
+}
+
+const newTask= {
+    text: taskText,
+    completed: false
+};
+
+tasks.push(newTask);
+updateList();
+taskInput.value=""; //Emptying the field of input
+{
+
+    function updateList(){
+    taskList.innerHTML="";
+    }
+
+    tasks.forEach([task,index])
+  
+    const li= document.createElement("li");
+    li.textContent=tasks.Text;
+
+}
+if (task.completed){
+    li.classList.add("Task completed")
+}
+
+li.addEventListener("click");
+{
+task.completed=task.completed;
+updateList();
+updateCompletedCount();
+}
+
+const deleteBtn=document.createElement("button");
+deleteBtn.textContent="Delete task";
+deleteBtn.className="Delete";
+deleteBtn.addEventListener("click");
+{
+tasks.splice(index,1);
+updateList();
+updateCompletedCount();
+
+}
+
+{
+    li.appendChild(deleteBtn);
+    taskList.appendChild(li);
 }
 
 
-/*Min listas ID är UL. Det är alltså en osorterad lista. Jag kan anropa metoden querySelector
-för att hämta olika element, helt fritt i form av klasser, id:n eller specifika taggar.
-såhär: let element=document.querySelector("ul"); */
 
-let elementList=document.querySelector("ul");
-let i;
- for (i=0; i < myNodeList.length; i++);{ //Jämför med antalet element i listan
 
-}
+    function updateCompletedCount(){
+        completedCount=tasks.filter(task==task.completed).length;
+        completedCount.textContent=completedTasksCount;
+    }
 
