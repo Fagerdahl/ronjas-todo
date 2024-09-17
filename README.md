@@ -22,6 +22,7 @@ Klicka på en liten papperskorg på varje rad för att radera den uppgiften ur l
 Webbapplikationen ska publiceras på GitHub pages.
 
 ### Raderade nu allt jag experimenterat med, för att fortsätta att nöta!
-Nu blir det full fokus på vad som efterfrågas i uppgiften.
+Nu blir det full fokus på vad som efterfrågas i uppgiften. 
+Så Därför la jag in foto och youtubevideos. My god.... 
 
 
