@@ -24,5 +24,7 @@ Webbapplikationen ska publiceras på GitHub pages.
 ### Raderade nu allt jag experimenterat med, för att fortsätta att nöta!
 Nu blir det full fokus på vad som efterfrågas i uppgiften. 
 Så Därför la jag in foto och youtubevideos. My god.... 
+Nu har jag testat lite till och experimenterat med olika funktioner och metodanrop. Det är väl detta som är lärandet i det hela!
+
 
 

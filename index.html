@@ -12,33 +12,25 @@
 </head>
 <body>
 
-    <img src="image.jpg" alt= "Just code it" style="width: 100px;height: 100px;">
-    <iframe width="600" height="300" src="https://www.youtube.com/embed/Udw66fdmKfQ?si=p20A_aiP6Sut-VBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
     <header>
         <h1>Ronjas To-Do List</h1>
+        <form id="todoForm">
+        <input id="todoInput">
+        <button type="button" onclick="todoList()">Click me</button>
+        </form>
         
+        
+    <ul id="theList">
+    </ul>
+    
     </header>
-
-    <nav>
-        <input type="text" id="myInput" placeholder="Write something to the list...">
-        <button id="addButton">Add this to the list</button>
-    </nav>
+    
     
     <footer>
-        <h2>TO-DO`s</h2>
-        <ul id="listOfTasks"></ul>
-
     </footer>
 
     <aside>
-        <p>Tasks complete: <span id="count">0</span></p>
     </aside>
-    
-     
-
-
 
 
 </body>
